@@ -1,147 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Timeless Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Kanav</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script> <!-- AOS for animations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-    <header class="header">
-        <img src="profile.jpg" alt="Your Name" class="profile-img">
-        <h1>Your Name</h1>
-        <p>DevOps Engineer | Master's in Information Systems</p>
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
-    </header>
-    
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#patents">Patents</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#qr-codes">Connect</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <section id="about" data-aos="fade-up">
-            <h2>About Me</h2>
-            <p>Experienced DevOps Engineer with 5 years in IT. Skilled in driving DevOps adoption, automating processes, and optimizing system performance. Passionate about leveraging technology to solve complex problems.</p>
-        </section>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
 
-        <section id="experience" data-aos="fade-up">
-            <h2>Work Experience</h2>
-            <div class="job">
-                <h3>DevOps Engineer Advance</h3>
-                <p>Amdocs, Pune, India (Aug 2021 – Aug 2024)</p>
-                <ul>
-                    <li>Drove DevOps adoption through tool sets and best practices.</li>
-                    <li>Managed deployments in OpenShift, achieving 99% success in disaster recovery drills.</li>
-                    <li>Automated tasks using shell, Python, and Groovy, reducing man hours by 40%.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Software Engineer</h3>
-                <p>Nihilent Ltd, Pune, India (Aug 2019 – Jul 2021)</p>
-                <ul>
-                    <li>Implemented CI/CD activities using Ansible, AWX, and HaProxy.</li>
-                    <li>Created custom roles in Ansible for server software installation.</li>
-                    <li>Integrated Selenium with Ansible for smoother testing.</li>
-                </ul>
-            </div>
-        </section>
+  <!-- Header Section -->
+  <header>
+    <h1 id="typed-output"></h1>
+    <button id="toggle-theme">Toggle Dark Mode</button>
+  </header>
 
-        <section id="skills" data-aos="fade-up">
-            <h2>Skills</h2>
-            <div class="skills-chart">
-                <canvas id="skillsChart" width="400" height="200"></canvas>
-            </div>
-        </section>
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>DevOps Engineer with 5 years of experience specializing in automation and cloud solutions.</p>
+  </section>
 
-        <section id="certifications" data-aos="fade-up">
-            <h2>Certifications</h2>
-            <ul>
-                <li>AWS Certified: Solutions Architect – Associate</li>
-                <li>AWS Certified: DevOps Engineer - Professional</li>
-                <li>Microsoft Certified: Azure DevOps Engineer Expert</li>
-                <li>Groovy, Nexus, Helm, OpenTelemetry, ArgoCD</li>
-            </ul>
-        </section>
+  <!-- Skills Section with Progress Bars -->
+  <section id="skills" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="skill-bar" data-skill="90">Jenkins</div>
+    <div class="skill-bar" data-skill="85">Docker</div>
+    <div class="skill-bar" data-skill="80">Kubernetes</div>
+    <div class="skill-bar" data-skill="75">AWS</div>
+  </section>
 
-        <section id="patents" data-aos="fade-up">
-            <h2>Patents</h2>
-            <ul>
-                <li>Automated Cricket Monitoring System</li>
-                <li>Method For Analyzing Consumer Behavior</li>
-            </ul>
-        </section>
+  <!-- Footer -->
+  <footer>
+    <p>Find me on <a href="https://github.com/Kanav14">GitHub</a> or <a href="https://linkedin.com">LinkedIn</a></p>
+    <img id="qr-github" alt="GitHub QR Code" src="path_to_github_qr.png">
+    <img id="qr-resume" alt="Resume QR Code" src="path_to_resume_qr.png">
+  </footer>
 
-        <section id="projects" data-aos="fade-up">
-            <h2>Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h3>Project Title 1</h3>
-                    <p>Brief description of Project 1.</p>
-                    <button onclick="window.open('https://github.com/yourusername/project1', '_blank')">View on GitHub</button>
-                    <button onclick="window.open('https://project-demo-link1', '_blank')">Live Demo</button>
-                </div>
-                <div class="project-card">
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of Project 2.</p>
-                    <button onclick="window.open('https://github.com/yourusername/project2', '_blank')">View on GitHub</button>
-                    <button onclick="window.open('https://project-demo-link2', '_blank')">Live Demo</button>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-        </section>
-
-        <section id="testimonials" data-aos="fade-up">
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <p>"An innovative thinker who consistently brings fresh ideas to the table."</p>
-                <cite>- John Doe, Senior Manager at XYZ Corp</cite>
-            </div>
-            <div class="testimonial">
-                <p>"A dedicated professional with exceptional technical skills and a strong work ethic."</p>
-                <cite>- Jane Smith, Team Lead at ABC Ltd</cite>
-            </div>
-            <div class="testimonial">
-                <p>"His ability to tackle complex problems and deliver solutions is remarkable!"</p>
-                <cite>- Alice Johnson, Project Manager at Tech Innovations</cite>
-            </div>
-            <p>For more recommendations, visit my <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn Profile</a>.</p>
-        </section>
-
-        <section id="qr-codes" data-aos="fade-up">
-            <h2>Connect with Me</h2>
-            <div class="qr-code">
-                <h3>Scan to visit my GitHub:</h3>
-                <img src="github-qr.png" alt="GitHub QR Code" width="150">
-            </div>
-            <div class="qr-code">
-                <h3>Scan to download my resume:</h3>
-                <img src="resume-qr.png" alt="Resume QR Code" width="150">
-            </div>
-            <div class="qr-code">
-                <h3>Scan to visit my LinkedIn:</h3>
-                <img src="linkedin-qr.png" alt="LinkedIn QR Code" width="150">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-    <script>AOS.init();</script>
+  <script src="particles.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
