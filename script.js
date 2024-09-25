@@ -37,4 +37,3 @@ const skillsChart = new Chart(ctx, {
         }
     }
 });
-});
