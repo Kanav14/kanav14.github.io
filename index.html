@@ -10,15 +10,17 @@
 </head>
 <body>
     <header class="header">
-        <img src="Kanav.jpeg" alt="Your Name" class="profile-img">
+        <img src="Kanav.jpeg" alt="Kanav Sharma" class="profile-img">
         <h1>Kanav Sharma</h1>
         <p>DevOps Engineer | Master's in Information Systems</p>
+        <p>Email: kanav@example.com | Phone: (123) 456-7890 | Location: Chicago, IL</p>
         <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </header>
     
     <nav class="navbar">
         <ul>
             <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#certifications">Certifications</a></li>
@@ -32,7 +34,15 @@
     <main>
         <section id="about" data-aos="fade-up">
             <h2>About Me</h2>
-            <p>Experienced DevOps Engineer with 5 years in IT. Skilled in driving DevOps adoption, automating processes, and optimizing system performance. Passionate about leveraging technology to solve complex problems.</p>
+            <p>Experienced DevOps Engineer with 5 years in IT. Skilled in driving DevOps adoption, automating processes, and optimizing system performance.</p>
+        </section>
+
+        <section id="education" data-aos="fade-up">
+            <h2>Education</h2>
+            <ul>
+                <li>Master’s in Information Science, DePaul University, Chicago, IL - CGPA: 4.0 (Sept 2024)</li>
+                <li>Bachelor of Technology in Computer Science, Chandigarh Group Of Colleges, Mohali, PB, India - CGPA: 7.56 (June 2019)</li>
+            </ul>
         </section>
 
         <section id="experience" data-aos="fade-up">
@@ -41,18 +51,17 @@
                 <h3>DevOps Engineer Advance</h3>
                 <p>Amdocs, Pune, India (Aug 2021 – Aug 2024)</p>
                 <ul>
-                    <li>Drove DevOps adoption through tool sets and best practices.</li>
-                    <li>Managed deployments in OpenShift, achieving 99% success in disaster recovery drills.</li>
-                    <li>Automated tasks using shell, Python, and Groovy, reducing man hours by 40%.</li>
+                    <li>Deployed applications using Helm charts on OpenShift clusters.</li>
+                    <li>Built tools to automate artifact transfers and vault deployments, reducing man hours by 40%.</li>
+                    <li>Participated in disaster recovery drills with a 100% success rate.</li>
                 </ul>
             </div>
             <div class="job">
                 <h3>Software Engineer</h3>
                 <p>Nihilent Ltd, Pune, India (Aug 2019 – Jul 2021)</p>
                 <ul>
-                    <li>Implemented CI/CD activities using Ansible, AWX, and HaProxy.</li>
-                    <li>Created custom roles in Ansible for server software installation.</li>
-                    <li>Integrated Selenium with Ansible for smoother testing.</li>
+                    <li>Developed automation scripts in Ansible to streamline server software installations.</li>
+                    <li>Configured HaProxy and integrated Selenium testing with Ansible Tower.</li>
                 </ul>
             </div>
         </section>
@@ -62,23 +71,27 @@
             <div class="skills-chart">
                 <canvas id="skillsChart" width="400" height="200"></canvas>
             </div>
+            <ul>
+                <li><strong>Languages:</strong> Shell, Python, Groovy</li>
+                <li><strong>DevOps Tools:</strong> Ansible, Docker, Kubernetes, Jenkins, Openshift</li>
+                <li><strong>Cloud Services:</strong> AWS (EC2, IAM, Load Balancer), Azure DevOps</li>
+                <li><strong>Misc Tools:</strong> GitHub, Jira, Blackduck, Selenium, Bitbucket, Vault, OpenTelemetry, Nexus</li>
+            </ul>
         </section>
 
         <section id="certifications" data-aos="fade-up">
             <h2>Certifications</h2>
             <ul>
-                <li>AWS Certified: Solutions Architect – Associate</li>
-                <li>AWS Certified: DevOps Engineer - Professional</li>
-                <li>Microsoft Certified: Azure DevOps Engineer Expert</li>
-                <li>Groovy, Nexus, Helm, OpenTelemetry, ArgoCD</li>
+                <li>Azure DevOps Engineer Expert</li>
+                <li>AWS DevOps Engineer Professional</li>
             </ul>
         </section>
 
         <section id="patents" data-aos="fade-up">
             <h2>Patents</h2>
             <ul>
-                <li>Automated Cricket Monitoring System</li>
-                <li>Method For Analyzing Consumer Behavior</li>
+                <li><strong>Automated Cricket Monitoring System</strong> (201911004796) - Uses microwaves to detect run-outs and no-balls without a third umpire.</li>
+                <li><strong>Method For Analyzing Consumer Behavior</strong> (201911031034) - AI system to assess consumer loan repayment ability.</li>
             </ul>
         </section>
 
@@ -86,18 +99,13 @@
             <h2>Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <h3>Project Title 1</h3>
-                    <p>Brief description of Project 1.</p>
-                    <button onclick="window.open('https://github.com/yourusername/project1', '_blank')">View on GitHub</button>
-                    <button onclick="window.open('https://project-demo-link1', '_blank')">Live Demo</button>
+                    <h3>Digital Experience R&D Team - Amdocs</h3>
+                    <p>Developed solutions for application release automation using Shell, Groovy, and Python.</p>
                 </div>
                 <div class="project-card">
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of Project 2.</p>
-                    <button onclick="window.open('https://github.com/yourusername/project2', '_blank')">View on GitHub</button>
-                    <button onclick="window.open('https://project-demo-link2', '_blank')">Live Demo</button>
+                    <h3>CatalogeOne and DigitalOne Application - XLCOM</h3>
+                    <p>Installed and automated OpenShift cluster deployment on VMware with Couchbase and Elasticsearch.</p>
                 </div>
-                <!-- Add more project cards as needed -->
             </div>
         </section>
 
@@ -105,17 +113,9 @@
             <h2>Testimonials</h2>
             <div class="testimonial">
                 <p>"An innovative thinker who consistently brings fresh ideas to the table."</p>
-                <cite>- John Doe, Senior Manager at XYZ Corp</cite>
+                <cite>- John Doe, Senior Manager</cite>
             </div>
-            <div class="testimonial">
-                <p>"A dedicated professional with exceptional technical skills and a strong work ethic."</p>
-                <cite>- Jane Smith, Team Lead at ABC Ltd</cite>
-            </div>
-            <div class="testimonial">
-                <p>"His ability to tackle complex problems and deliver solutions is remarkable!"</p>
-                <cite>- Alice Johnson, Project Manager at Tech Innovations</cite>
-            </div>
-            <p>For more recommendations, visit my <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn Profile</a>.</p>
+            <p>For more recommendations, visit my <a href="https://linkedin.com/in/kanav14" target="_blank">LinkedIn Profile</a>.</p>
         </section>
 
         <section id="qr-codes" data-aos="fade-up">
@@ -136,7 +136,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Kanav Sharma</p>
     </footer>
 
     <script src="script.js"></script>
