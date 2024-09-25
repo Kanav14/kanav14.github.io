@@ -1,46 +1,21 @@
-// Skills Chart
-const ctx = document.getElementById('skillsChart').getContext('2d');
-const skillsChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Ansible', 'Docker', 'Kubernetes', 'Jenkins', 'Shell Scripting'],
-        datasets: [{
-            label: 'Skill Level (%)',
-            data: [85, 90, 75, 80, 70],
-            backgroundColor: [
-                'rgba(59, 130, 246, 1)',
-                'rgba(34, 197, 94, 1)',
-                'rgba(220, 38, 38, 1)',
-                'rgba(256, 159, 0, 1)',
-                'rgba(162, 162, 162, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true,
-                max: 100,
-                title: {
-                    display: true,
-                    text: 'Skill Level (%)'
-                }
-            }
-        },
-        responsive: true,
-        plugins: {
-            legend: {
-                display: true,
-                position: 'top'
-            }
-        }
-    }
+// Initialize AOS for scroll animations
+AOS.init();
+
+// Typing effect for header
+var typed = new Typed('#typed-output', {
+  strings: ["DevOps Engineer", "Cloud Architect", "Automation Expert"],
+  typeSpeed: 50,
+  backSpeed: 30,
+  loop: true
 });
 
-// Dark Mode Toggle
-const toggle = document.getElementById('dark-mode-toggle');
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+// Particle.js configuration
+particlesJS.load('particles-js', 'particles-config.json', function() {
+  console.log('particles.js loaded');
 });
 
+// Dark/Light mode toggle
+const toggleThemeButton = document.getElementById('toggle-theme');
+toggleThemeButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
