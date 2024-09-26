@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .header {
@@ -36,35 +35,52 @@ body {
 
 .navbar li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .navbar a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #4F46E5;
+    color: #3B82F6;
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
 }
 
 h2 {
+    font-size: 28px;
+    color: #4F46E5;
     border-bottom: 2px solid #4F46E5;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.job, .testimonial {
-    margin-bottom: 20px;
+.job h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.job ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-chart {
+    max-width: 600px;
+    margin: auto;
 }
 
 .projects-container {
@@ -74,43 +90,45 @@ h2 {
 }
 
 .project-card {
-    background: #ffffff;
+    background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 20px;
     margin: 10px;
-    flex: 0 0 calc(45% - 20px);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+    width: 48%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.project-card button {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-card button:hover {
+    background-color: #4F46E5;
+}
+
+.testimonial {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-left: 5px solid #4F46E5;
 }
 
 .qr-code {
     display: inline-block;
-    margin: 15px;
+    margin: 20px;
+    text-align: center;
 }
 
-.dark-mode {
+footer {
+    text-align: center;
+    padding: 20px;
     background-color: #333;
     color: white;
-}
-
-.dark-mode .navbar {
-    background: #444;
-}
-
-.dark-mode .project-card {
-    background: #555;
-    border: 1px solid #666;
-}
-
-.testimonial {
-    background: #f0f0f0;
-    border-left: 4px solid #4F46E5;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 5px;
 }
