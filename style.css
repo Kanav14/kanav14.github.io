@@ -10,21 +10,7 @@ body {
     background: linear-gradient(to right, #4F46E5, #3B82F6);
     color: white;
     text-align: center;
-    padding: 50px 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.glow {
-    text-shadow: 0 0 10px #4F46E5, 0 0 20px #3B82F6;
+    padding: 20px;
 }
 
 .profile-img {
@@ -33,16 +19,6 @@ body {
     border-radius: 50%;
     border: 4px solid white;
     margin-bottom: 10px;
-    animation: profile-bounce 2s infinite;
-}
-
-@keyframes profile-bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
 }
 
 .navbar {
@@ -90,37 +66,76 @@ h2 {
     border-bottom: 2px solid #4F46E5;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    animation: section-title 1s ease-in-out;
 }
 
-@keyframes section-title {
-    from {
-        transform: translateX(-100%);
+.job h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.job ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-chart {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Projects section styling */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Add space between cards */
+}
+
+.project-card {
+    background-color: #ffffff; /* White background for the cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
+    padding: 20px; /* Internal padding */
+    width: 100%; /* Full width on small screens */
+    max-width: 48%; /* 48% width on larger screens for a 2-column layout */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add hover transition */
+}
+
+/* Hover effect */
+.project-card:hover {
+    transform: translateY(-10px); /* Moves the card upwards on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+/* Title and description */
+.project-card h3 {
+    margin-top: 0;
+    color: #333; /* Darker color for better readability */
+}
+
+.project-card p {
+    color: #666; /* Subtle gray for description text */
+    line-height: 1.6; /* Better line spacing for readability */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .project-card {
+        max-width: 100%; /* Make project cards full width on smaller screens */
     }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.job, .testimonial, .qr-code {
-    margin-bottom: 20px;
-}
-
-.testimonial {
-    font-style: italic;
-    background: #f0f0f0;
-    padding: 10px;
-    border-left: 4px solid #4F46E5;
 }
 
 footer {
-    background: #4F46E5;
+    background-color: #4F46E5;
     color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
 }
 
-footer p {
-    margin: 0;
+/* QR Codes section styling */
+.qr-code {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
 }
