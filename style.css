@@ -68,6 +68,14 @@ h2 {
     margin-bottom: 20px;
 }
 
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
 .job h3 {
     font-size: 24px;
     margin: 10px 0;
@@ -79,63 +87,38 @@ h2 {
 }
 
 .skills-chart {
-    max-width: 600px;
-    margin: auto;
+    text-align: center;
 }
 
-/* Projects section styling */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; /* Add space between cards */
+    gap: 20px;
 }
 
 .project-card {
-    background-color: #ffffff; /* White background for the cards */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
-    padding: 20px; /* Internal padding */
-    width: 100%; /* Full width on small screens */
-    max-width: 48%; /* 48% width on larger screens for a 2-column layout */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add hover transition */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
 }
 
-/* Hover effect */
-.project-card:hover {
-    transform: translateY(-10px); /* Moves the card upwards on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+.qr-code {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Title and description */
-.project-card h3 {
-    margin-top: 0;
-    color: #333; /* Darker color for better readability */
-}
-
-.project-card p {
-    color: #666; /* Subtle gray for description text */
-    line-height: 1.6; /* Better line spacing for readability */
-}
-
-/* Responsive design for small screens */
-@media (max-width: 768px) {
-    .project-card {
-        max-width: 100%; /* Make project cards full width on smaller screens */
-    }
+.qr-code img {
+    border: 2px solid #ddd;
+    border-radius: 10px;
 }
 
 footer {
+    text-align: center;
+    padding: 20px;
     background-color: #4F46E5;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-/* QR Codes section styling */
-.qr-code {
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
 }
