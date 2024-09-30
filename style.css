@@ -68,6 +68,14 @@ h2 {
     margin-bottom: 20px;
 }
 
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
 .job h3 {
     font-size: 24px;
     margin: 10px 0;
@@ -79,57 +87,38 @@ h2 {
 }
 
 .skills-chart {
-    max-width: 600px;
-    margin: auto;
+    text-align: center;
 }
 
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .project-card {
-    background: #f0f0f0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 8px;
-    width: 48%;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-}
-
-footer {
-    background-color: #333;
-    color: white;
+    flex: 1;
+    max-width: 45%;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
 }
 
 .qr-code {
     text-align: center;
-    margin: 20px 0;
-}
-
-.qr-code img {
-    margin-bottom: 10px;
-}
-
-.testimonial {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-left: 4px solid #4F46E5;
     margin-bottom: 20px;
 }
 
-cite {
-    font-style: italic;
-    font-size: 14px;
-    display: block;
-    margin-top: 10px;
+.qr-code img {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4F46E5;
+    color: white;
 }
