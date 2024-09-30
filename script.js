@@ -1,45 +1,28 @@
 // Skills Chart
 const ctx = document.getElementById('skillsChart').getContext('2d');
 const skillsChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'radar',
     data: {
-        labels: ['Ansible', 'Docker', 'Kubernetes', 'Jenkins', 'Shell Scripting'],
+        labels: ['AWS', 'Docker', 'Kubernetes', 'Python', 'Ansible', 'Jenkins'],
         datasets: [{
-            label: 'Skill Level (%)',
-            data: [85, 90, 75, 80, 70],
-            backgroundColor: [
-                'rgba(59, 130, 246, 1)',
-                'rgba(34, 197, 94, 1)',
-                'rgba(220, 38, 38, 1)',
-                'rgba(256, 159, 0, 1)',
-                'rgba(162, 162, 162, 1)'
-            ],
-            borderWidth: 1
+            label: 'Skills Proficiency',
+            data: [90, 80, 85, 75, 70, 80],
+            backgroundColor: 'rgba(59, 130, 246, 0.2)',
+            borderColor: '#3B82F6',
+            borderWidth: 2
         }]
     },
     options: {
-        scales: {
-            y: {
+        scale: {
+            ticks: {
                 beginAtZero: true,
-                max: 100,
-                title: {
-                    display: true,
-                    text: 'Skill Level (%)'
-                }
-            }
-        },
-        responsive: true,
-        plugins: {
-            legend: {
-                display: true,
-                position: 'top'
+                max: 100
             }
         }
     }
 });
 
-// Dark Mode Toggle
-const toggle = document.getElementById('dark-mode-toggle');
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+// Loading Screen
+window.addEventListener('load', function () {
+    document.body.classList.add('loaded');
 });
