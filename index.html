@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanav's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+<body class="loaded">
+
+    <!-- Loading Screen -->
+    <div id="loading">
+        <img src="loading.gif" alt="Loading...">
+    </div>
+
     <header class="header">
         <img src="Kanav.jpeg" alt="Your Name" class="profile-img">
         <h1>Kanav Sharma</h1>
-        <p><strong>DevOps Engineer</strong> | Master's in Information Systems</p>
+        <p>DevOps Engineer | Master's in Information Systems</p>
         <p>Location: Chicago, IL | Email: kanavsharma30@gmail.com | Phone: +1(773)715-7384</p>
     </header>
     
@@ -35,16 +43,16 @@
             <h2>About Me</h2>
             <p><strong>DevOps Engineer with 5 years of industry experience</strong></p>
             <ul>
-                <li><strong>Extensive experience</strong> with automating and optimizing deployments on <em>AWS</em>.</li>
-                <li><strong>Skilled</strong> in <em>Terraform</em>, <em>CI/CD pipelines</em>, and cloud infrastructure management.</li>
-                <li><strong>Strong understanding</strong> of programming languages like <em>Python</em>, <em>Java</em>, <em>JavaScript</em>.</li>
-                <li><strong>Worked on databases</strong> like <em>PostgreSQL</em>, <em>MySQL</em>, and <em>MongoDB</em>.</li>
-                <li><strong>Proficient</strong> in cloud services, <em>Docker</em>, <em>Kubernetes</em>, <em>Jenkins</em>, and <em>GitHub Actions</em>.</li>
-                <li><strong>Knowledge</strong> of <em>Agile</em> and <em>Software Development Life Cycle (SDLC)</em> methodologies.</li>
-                <li><strong>Experience</strong> with configuration management tools like <em>Ansible</em> and <em>Chef</em>.</li>
+                <li>Extensive experience with automating and optimizing deployments on AWS.</li>
+                <li>Skilled in Terraform, CI/CD pipelines, and cloud infrastructure management.</li>
+                <li>Strong understanding of programming languages like Python, Java, JavaScript.</li>
+                <li>Worked on databases like PostgreSQL, MySQL, and MongoDB.</li>
+                <li>Proficient in cloud services, Docker, Kubernetes, Jenkins, and GitHub Actions.</li>
+                <li>Knowledge of Agile and Software Development Life Cycle (SDLC) methodologies.</li>
+                <li>Experience with configuration management tools like Ansible and Chef.</li>
             </ul>
             <p>
-                I'm a <strong>results-driven</strong> DevOps Engineer, passionate about automating processes and optimizing cloud infrastructure for seamless performance. With over five years of experience, I've worked on diverse projects, leveraging tools like <em>AWS</em>, <em>Docker</em>, and <em>Terraform</em> to streamline operations and build resilient systems. Currently pursuing a <strong>Master’s in Information Systems</strong>, I strive to push the boundaries of technology, continuously learning and applying innovative solutions to deliver exceptional outcomes.
+                I'm a results-driven DevOps Engineer, passionate about automating processes and optimizing cloud infrastructure for seamless performance. With over five years of experience, I've worked on diverse projects, leveraging tools like AWS, Docker, and Terraform to streamline operations and build resilient systems. Currently pursuing a Master’s in Information Systems, I strive to push the boundaries of technology, continuously learning and applying innovative solutions to deliver exceptional outcomes.
             </p>
         </section>
 
@@ -55,16 +63,16 @@
                 <h3>DevOps Engineer Advance</h3>
                 <p>Amdocs, Pune, India (Aug 2021 – Aug 2024)</p>
                 <ul>
-                    <li>Managed deployments in <strong>OpenShift</strong>, achieving <strong>99%</strong> success in disaster recovery drills.</li>
-                    <li>Automated tasks using <em>shell</em>, <em>Python</em>, and <em>Groovy</em>, reducing man hours by <strong>40%</strong>.</li>
+                    <li>Managed deployments in OpenShift, achieving 99% success in disaster recovery drills.</li>
+                    <li>Automated tasks using shell, Python, and Groovy, reducing man hours by 40%.</li>
                 </ul>
             </div>
             <div class="job">
                 <h3>Software Engineer</h3>
                 <p>Nihilent Ltd, Pune, India (Aug 2019 – Jul 2021)</p>
                 <ul>
-                    <li>Implemented CI/CD activities using <em>Ansible</em>, <em>AWX</em>, and <em>HaProxy</em>.</li>
-                    <li>Collaborated with testing team to automate <em>selenium testing</em> using <em>Ansible</em>.</li>
+                    <li>Implemented CI/CD activities using Ansible, AWX, and HaProxy.</li>
+                    <li>Collaborated with testing team to automate selenium testing using Ansible.</li>
                 </ul>
             </div>
         </section>
@@ -82,10 +90,10 @@
             <h2>Technical Skills</h2>
             <ul>
                 <li><strong>Languages:</strong> Shell, Python, Groovy</li>
-                <li><strong>DevOps Tools:</strong> Ansible, Docker, Kubernetes, Jenkins, OpenShift</li>
-                <li><strong>Cloud Services and Backing Services:</strong> AWS (EC2, OpenSearch, Load Balancer, IAM), Azure DevOps, Elasticsearch, Kafka, Cloudera, PostgreSQL</li>
-                <li><strong>Misc:</strong> GitHub, Artifactory, Jira, Blackduck, Selenium, Bitbucket, Vault, OpenTelemetry, Nexus, Helm, ArgoCD, Grafana</li>
-                <li><strong>Certifications:</strong> Azure DevOps Engineer Expert, AWS DevOps Engineer Professional</li>
+                <li><strong>DevOps Tools:</strong> Ansible, Docker, Kubernetes, Jenkins, Openshift</li>
+                <li><strong>Cloud Services:</strong> AWS (EC2, OpenSearch, Load Balancer, IAM), Azure DevOps</li>
+                <li><strong>Backing Services:</strong> Elasticsearch, Kafka, Cloudera, Postgres</li>
+                <li><strong>Misc:</strong> GitHub, Artifactory, Jira, Selenium, Vault, Helm, ArgoCD, Grafana</li>
             </ul>
         </section>
 
@@ -104,8 +112,8 @@
         <section id="patents" data-aos="fade-up">
             <h2>Patents</h2>
             <ul>
-                <li><strong>Automated Cricket Monitoring System (201911004796):</strong> System uses microwaves to detect run-outs and no-balls in cricket without 3rd Umpire’s need.</li>
-                <li><strong>Method For Analyzing Consumer Behavior (201911031034):</strong> AI-based system for banks to understand consumer repayment ability.</li>
+                <li>Automated Cricket Monitoring System</li>
+                <li>Method For Analyzing Consumer Behavior</li>
             </ul>
         </section>
 
@@ -115,27 +123,17 @@
             <div class="projects-container">
                 <div class="project-card">
                     <h3>Digital Experience R&D Team - Amdocs (Jan 2023 - Aug 2024)</h3>
-                    <ul>
-                        <li>Developed solutions to fast-track application releases by writing automations in <strong>Shell</strong>, <strong>Groovy</strong>, and <strong>Python</strong>.</li>
-                        <li>Implemented a solution for drill activities in case of disaster with <strong>95%</strong> success in one go.</li>
-                        <li>Deployed end-to-end applications on <strong>AWS EKS</strong> cluster with containerized backing services like <strong>Kafka</strong>, <strong>Elasticsearch</strong>, and <strong>Couchbase</strong>.</li>
-                    </ul>
+                    <p>Developed solutions to fast-track application releases by writing automations in Shell, Groovy, and Python.</p>
+                    <p>Deployed end-to-end applications on AWS EKS with containerized services like Kafka, Elasticsearch, and Couchbase.</p>
                 </div>
                 <div class="project-card">
-                    <h3>CatalogeOne and DeigitalOne Application - XLCOM (Aug 2021 - Dec 2022)</h3>
-                    <ul>
-                        <li>Installed <strong>OpenShift</strong> cluster on <strong>VMware</strong> with backing services like <strong>Couchbase</strong>, <strong>Cloudera</strong>, <strong>Elasticsearch</strong>, and <strong>Postgres</strong> fully automated by <strong>Groovy</strong>.</li>
-                        <li>Deployed an environment using <strong>Helm charts</strong> to deploy applications on OpenShift.</li>
-                        <li>Managed pods' aliveness, troubleshooting, and fixed any pod down issues.</li>
-                    </ul>
+                    <h3>CatalogeOne and DigitalOne Application - XLCOM (Aug 2021 - Dec 2022)</h3>
+                    <p>Installed Openshift cluster on VMware, automating the process with Groovy.</p>
+                    <p>Managed helm charts for application deployment on Openshift, troubleshooting pod issues.</p>
                 </div>
                 <div class="project-card">
                     <h3>Genesys - HSBC (Aug 2019 - Jul 2021)</h3>
-                    <ul>
-                        <li>Wrote automation scripts in <strong>Python</strong> and <strong>Shell</strong> for executing tests and parsing logs.</li>
-                        <li>Developed a framework using <strong>Selenium</strong> and <strong>Java</strong> for functional testing.</li>
-                        <li>Set up CI/CD pipelines using <strong>Jenkins</strong> for automated testing.</li>
-                    </ul>
+                    <p>Automated SQL, Java dependencies setup using Ansible and integrated Selenium testing.</p>
                 </div>
             </div>
         </section>
@@ -144,66 +142,38 @@
         <section id="testimonials" data-aos="fade-up">
             <h2>Testimonials</h2>
             <div class="testimonial">
-                <p>"Kanav is a talented DevOps Engineer with exceptional problem-solving skills. His ability to automate processes significantly improved our deployment speed!"</p>
-                <cite>- John Doe, Senior Project Manager at Amdocs</cite>
+                <p>"An innovative thinker who consistently brings fresh ideas to the table."</p>
+                <cite>- John Doe, Senior Manager at XYZ Corp</cite>
             </div>
             <div class="testimonial">
-                <p>"Working with Kanav was a pleasure. His technical expertise and dedication made a considerable impact on our project outcomes."</p>
-                <cite>- Jane Smith, Team Lead at Nihilent Ltd</cite>
+                <p>"A dedicated professional with exceptional technical skills and a strong work ethic."</p>
+                <cite>- Jane Smith, Team Lead at ABC Ltd</cite>
             </div>
+            <p>For more recommendations, visit my <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn Profile</a>.</p>
         </section>
 
-        <!-- QR Codes Section -->
+        <!-- Connect Section -->
         <section id="qr-codes" data-aos="fade-up">
             <h2>Connect with Me</h2>
             <div class="qr-code">
-                <p>Scan to view my <strong>GitHub Profile</strong>:</p>
-                <img src="github-qr.png" alt="GitHub QR Code">
-                <p>Scan to download my <strong>Resume</strong>:</p>
-                <img src="resume-qr.png" alt="Resume QR Code">
+                <h3>Scan to download my resume:</h3>
+                <img src="resume-qr.png" alt="Resume QR Code" width="150">
+            </div>
+            <div class="qr-code">
+                <h3>Scan to visit my LinkedIn:</h3>
+                <img src="linkedin-qr.png" alt="LinkedIn QR Code" width="150">
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Kanav Sharma. All Rights Reserved.</p>
+        <p>&copy; 2024 Kanav Sharma</p>
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
         AOS.init();
-        
-        const ctx = document.getElementById('skillsChart').getContext('2d');
-        const skillsChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Python', 'AWS', 'Docker', 'Kubernetes', 'Jenkins'],
-                datasets: [{
-                    label: 'Proficiency Level',
-                    data: [90, 85, 80, 75, 70],
-                    backgroundColor: [
-                        'rgba(54, 162, 235, 0.6)',
-                        'rgba(255, 206, 86, 0.6)',
-                        'rgba(75, 192, 192, 0.6)',
-                        'rgba(153, 102, 255, 0.6)',
-                        'rgba(255, 99, 132, 0.6)'
-                    ],
-                    borderColor: 'rgba(0, 0, 0, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Proficiency (%)'
-                        }
-                    }
-                }
-            }
-        });
     </script>
 </body>
 </html>
