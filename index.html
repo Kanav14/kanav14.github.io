@@ -77,6 +77,18 @@
             </div>
         </section>
 
+        <!-- Technical Skills Section -->
+        <section id="technical-skills" data-aos="fade-up">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Languages: Shell, Python, Groovy</li>
+                <li>DevOps Tools: Ansible, Docker, Kubernetes, Jenkins, Openshift</li>
+                <li>Cloud Services and Backing Services: AWS (EC2, OpenSearch, Load Balancer, IAM), Azure DevOps, Elasticsearch, Kafka, Cloudera, Postgres</li>
+                <li>Misc: GitHub, Artifactory, Jira, Blackduck, Selenium, Bitbucket, Vault, OpenTelemetry, Nexus, Helm, ArgoCD, Grafana</li>
+                <li>Certifications: Azure DevOps Engineer Expert, AWS DevOps Engineer Professional</li>
+            </ul>
+        </section>
+
         <!-- Certifications Section -->
         <section id="certifications" data-aos="fade-up">
             <h2>Certifications</h2>
@@ -92,8 +104,8 @@
         <section id="patents" data-aos="fade-up">
             <h2>Patents</h2>
             <ul>
-                <li>Automated Cricket Monitoring System</li>
-                <li>Method For Analyzing Consumer Behavior</li>
+                <li>Automated Cricket Monitoring System (201911004796) - System uses microwaves to detect run-outs and no-balls in cricket without 3rd Umpire’s need</li>
+                <li>Method For Analyzing Consumer Behavior (201911031034) - AI-based system for banks to understand whether a consumer can repay the loan or not</li>
             </ul>
         </section>
 
@@ -102,12 +114,28 @@
             <h2>Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <h3>Project Title 1</h3>
-                    <p>Brief description of Project 1.</p>
+                    <h3>Digital Experience R&D Team - Amdocs (Jan 2023 - Aug 2024)</h3>
+                    <ul>
+                        <li>Developed solutions to fast-track application releases by writing automations in Shell, Groovy, and Python.</li>
+                        <li>Developed and implemented a solution to perform disaster recovery drill activity with 95% success on the first go.</li>
+                        <li>Deployed end-to-end application on AWS EKS cluster with containerized backing services like Kafka, Elasticsearch, Couchbase.</li>
+                    </ul>
                 </div>
                 <div class="project-card">
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of Project 2.</p>
+                    <h3>CatalogeOne and DeigitalOne Application - XLCOM (Aug 2021 - Dec 2022)</h3>
+                    <ul>
+                        <li>Installed Openshift cluster on VMware with backing services like Couchbase, Cloudera, Elasticsearch, and Postgres fully automated by Groovy.</li>
+                        <li>Deployed an environment using Helm charts to deploy the application on Openshift.</li>
+                        <li>Managed pods aliveness, troubleshooting, and fixed any pod down issues.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Genesys - HSBC (Aug 2019 - Jul 2021)</h3>
+                    <ul>
+                        <li>Wrote automation scripts in Ansible to deploy dependencies such as SQL, Java, etc. as prerequisites for client applications.</li>
+                        <li>Integrated Selenium with Ansible Tower for automation deployment of test cases on client VMs.</li>
+                        <li>Configured Ansible Vault for safe storage of secrets at client on-prem VMs.</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -135,17 +163,42 @@
             </div>
             <div class="qr-code">
                 <h3>Scan to visit my LinkedIn:</h3>
-                <img src="linkedin-qr.png" alt="LinkedIn QR Code" width="150">
+                <img src="github-qr.png" alt="GitHub QR Code" width="150">
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Kanav Sharma</p>
+        <p>© 2024 Kanav Sharma. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>
+        AOS.init();
+
+        var ctx = document.getElementById('skillsChart').getContext('2d');
+        var skillsChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['AWS', 'Docker', 'Jenkins', 'Terraform', 'Python', 'Kubernetes', 'Azure'],
+                datasets: [{
+                    label: 'Skill Proficiency',
+                    data: [90, 85, 80, 75, 85, 80, 70],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    r: {
+                        angleLines: { display: false },
+                        suggestedMin: 50,
+                        suggestedMax: 100
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
