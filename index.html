@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanav's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body class="loaded">
-
+<body>
     <!-- Loading Screen -->
-    <div id="loading">
-        <img src="loading.gif" alt="Loading...">
+    <div id="loading-screen">
+        <div class="spinner"></div>
     </div>
 
     <header class="header">
@@ -28,7 +24,7 @@
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#patents">Patents</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -77,24 +73,31 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" data-aos="fade-up">
-            <h2>Skills</h2>
-            <div class="skills-chart">
-                <canvas id="skillsChart" width="400" height="200"></canvas>
-            </div>
-        </section>
-
         <!-- Technical Skills Section -->
-        <section id="technical-skills" data-aos="fade-up">
+        <section id="skills" data-aos="fade-up">
             <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> Shell, Python, Groovy</li>
-                <li><strong>DevOps Tools:</strong> Ansible, Docker, Kubernetes, Jenkins, Openshift</li>
-                <li><strong>Cloud Services:</strong> AWS (EC2, OpenSearch, Load Balancer, IAM), Azure DevOps</li>
-                <li><strong>Backing Services:</strong> Elasticsearch, Kafka, Cloudera, Postgres</li>
-                <li><strong>Misc:</strong> GitHub, Artifactory, Jira, Selenium, Vault, Helm, ArgoCD, Grafana</li>
-            </ul>
+            <table class="skills-table">
+                <tr>
+                    <th>Languages</th>
+                    <td>Shell, Python, Groovy</td>
+                </tr>
+                <tr>
+                    <th>DevOps Tools</th>
+                    <td>Ansible, Docker, Kubernetes, Jenkins, Openshift</td>
+                </tr>
+                <tr>
+                    <th>Cloud Services</th>
+                    <td>AWS (EC2, Opensearch, Load Balancer, IAM), Azure DevOps</td>
+                </tr>
+                <tr>
+                    <th>Backing Services</th>
+                    <td>Elasticsearch, Kafka, Cloudera, Postgres</td>
+                </tr>
+                <tr>
+                    <th>Miscellaneous</th>
+                    <td>GitHub, Artifactory, Jira, Blackduck, Selenium, Bitbucket, Vault, OpenTelemetry, Nexus, Helm, ArgoCD, Grafana</td>
+                </tr>
+            </table>
         </section>
 
         <!-- Certifications Section -->
@@ -112,8 +115,8 @@
         <section id="patents" data-aos="fade-up">
             <h2>Patents</h2>
             <ul>
-                <li>Automated Cricket Monitoring System</li>
-                <li>Method For Analyzing Consumer Behavior</li>
+                <li>Automated Cricket Monitoring System (201911004796) - Detects run-outs and no-balls in cricket without 3rd umpire's need.</li>
+                <li>Method For Analyzing Consumer Behavior (201911031034) - AI-based system for loan repayment prediction.</li>
             </ul>
         </section>
 
@@ -122,18 +125,28 @@
             <h2>Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <h3>Digital Experience R&D Team - Amdocs (Jan 2023 - Aug 2024)</h3>
-                    <p>Developed solutions to fast-track application releases by writing automations in Shell, Groovy, and Python.</p>
-                    <p>Deployed end-to-end applications on AWS EKS with containerized services like Kafka, Elasticsearch, and Couchbase.</p>
+                    <h3>Digital Experience R&D Team</h3>
+                    <p><strong>Amdocs (Jan 2023 - Aug 2024)</strong></p>
+                    <ul>
+                        <li>Developed automation solutions to fast-track application releases using Shell, Groovy, and Python.</li>
+                        <li>Implemented disaster drill solutions with a 95% success rate on AWS EKS clusters.</li>
+                    </ul>
                 </div>
                 <div class="project-card">
-                    <h3>CatalogeOne and DigitalOne Application - XLCOM (Aug 2021 - Dec 2022)</h3>
-                    <p>Installed Openshift cluster on VMware, automating the process with Groovy.</p>
-                    <p>Managed helm charts for application deployment on Openshift, troubleshooting pod issues.</p>
+                    <h3>CatalogeOne and DigitalOne Application</h3>
+                    <p><strong>XLCom (Aug 2021 - Dec 2022)</strong></p>
+                    <ul>
+                        <li>Automated Openshift cluster setup on VMware with Couchbase, Elasticsearch, and Postgres.</li>
+                        <li>Helm-charted deployments and pod management on Openshift clusters.</li>
+                    </ul>
                 </div>
                 <div class="project-card">
-                    <h3>Genesys - HSBC (Aug 2019 - Jul 2021)</h3>
-                    <p>Automated SQL, Java dependencies setup using Ansible and integrated Selenium testing.</p>
+                    <h3>Genesys</h3>
+                    <p><strong>HSBC (Aug 2019 - Jul 2021)</strong></p>
+                    <ul>
+                        <li>Automated SQL and Java prerequisites using Ansible for client applications.</li>
+                        <li>Integrated Selenium with Ansible Tower for automated test case deployments.</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -170,10 +183,12 @@
         <p>&copy; 2024 Kanav Sharma</p>
     </footer>
 
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
         AOS.init();
+        window.addEventListener("load", function() {
+            document.getElementById("loading-screen").style.display = "none";
+        });
     </script>
 </body>
 </html>
