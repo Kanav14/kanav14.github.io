@@ -6,7 +6,7 @@
     <title>Kanav's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -75,7 +75,7 @@
             <table class="skills-table">
                 <tr>
                     <th>Technical Skills</th>
-                    <th>Proficiency</th>
+                    <th>Details</th>
                 </tr>
                 <tr>
                     <td>Languages</td>
@@ -91,11 +91,15 @@
                 </tr>
                 <tr>
                     <td>Backing Services</td>
-                    <td>Elasticsearch, Kafka, Cloudera, PostgreSQL</td>
+                    <td>Elasticsearch, Kafka, Cloudera, Postgres</td>
                 </tr>
                 <tr>
-                    <td>Miscellaneous</td>
-                    <td>GitHub, Artifactory, Jira, Selenium, Bitbucket, Vault, OpenTelemetry</td>
+                    <td>Misc</td>
+                    <td>GitHub, Artifactory, Jira, Blackduck, Selenium, Bitbucket, Vault, OpenTelemetry, Nexus, Helm, ArgoCD, Grafana</td>
+                </tr>
+                <tr>
+                    <td>Certifications</td>
+                    <td>Azure DevOps Engineer Expert, AWS DevOps Engineer Professional</td>
                 </tr>
             </table>
         </section>
@@ -115,8 +119,8 @@
         <section id="patents" data-aos="fade-up">
             <h2>Patents</h2>
             <ul>
-                <li>Automated Cricket Monitoring System (201911004796) - System uses microwaves to detect run-outs and no-balls in cricket without 3rd Umpire’s need</li>
-                <li>Method For Analyzing Consumer Behavior (201911031034) - AI-based system for banks to understand consumer can repay the loan or not</li>
+                <li><strong>Automated Cricket Monitoring System</strong> (201911004796) - System uses microwaves to detect run-outs and no-balls in cricket without 3rd Umpire’s need.</li>
+                <li><strong>Method For Analyzing Consumer Behavior</strong> (201911031034) - AI-based system for banks to understand consumer repayment ability.</li>
             </ul>
         </section>
 
@@ -125,28 +129,25 @@
             <h2>Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <h3>Digital Experience R&D Team - Amdocs</h3>
-                    <p><strong>Jan 2023 - Aug 2024</strong></p>
+                    <h3>Digital Experience R&D Team - Amdocs (Jan 2023 - Aug 2024)</h3>
                     <ul>
                         <li>Developed solutions to fast-track application releases by writing automations in Shell, Groovy, and Python.</li>
                         <li>Developed and implemented a solution to perform drill activity in case of disaster with 95% success in one go.</li>
-                        <li>Deployed end-to-end application on AWS EKS cluster with containerized backing services like Kafka, Elasticsearch, Couchbase.</li>
+                        <li>Deployed end-to-end application on AWS EKS cluster with containerized backing services like Kafka, Elasticsearch, and Couchbase.</li>
                     </ul>
                 </div>
                 <div class="project-card">
-                    <h3>CatalogeOne and DeigitalOne Application - XLCOM</h3>
-                    <p><strong>Aug 2021 - Dec 2022</strong></p>
+                    <h3>CatalogeOne and DigitalOne Application - XLCOM (Aug 2021 - Dec 2022)</h3>
                     <ul>
                         <li>Installed OpenShift cluster on VMware with backing services like Couchbase, Cloudera, Elasticsearch, and Postgres fully automated by Groovy.</li>
-                        <li>Deployed an environment using helm charts to deploy application on OpenShift.</li>
-                        <li>Managed pods aliveness, troubleshooting, and fixed any pod down issues.</li>
+                        <li>Deployed an environment using Helm charts to deploy application on OpenShift.</li>
+                        <li>Managed pods' aliveness, troubleshooting, and fixing any pod down issues.</li>
                     </ul>
                 </div>
                 <div class="project-card">
-                    <h3>Genesys - HSBC</h3>
-                    <p><strong>Aug 2019 - Jul 2021</strong></p>
+                    <h3>Genesys - HSBC (Aug 2019 - Jul 2021)</h3>
                     <ul>
-                        <li>Wrote automation scripts in Ansible to deploy dependencies such as SQL, Java, etc as prerequisites to client application.</li>
+                        <li>Wrote automation scripts in Ansible to deploy dependencies such as SQL, Java, etc. as prerequisites to client application.</li>
                         <li>Integrated Selenium with Ansible Tower for automation deployment of test cases on client VMs.</li>
                         <li>Configured Ansible Vault for safe storage of secrets at client on-prem VMs.</li>
                     </ul>
@@ -165,25 +166,27 @@
                 <p>"A dedicated professional with exceptional technical skills and a strong work ethic."</p>
                 <cite>- Jane Smith, Team Lead at ABC Ltd</cite>
             </div>
-            <p>For more recommendations, visit my <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn Profile</a>.</p>
+            <p>For more recommendations, visit my <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>.</p>
         </section>
 
-        <!-- Connect Section -->
+        <!-- QR Codes Section -->
         <section id="qr-codes" data-aos="fade-up">
             <h2>Connect with Me</h2>
-            <div class="qr-code">
-                <h3>Scan to download my resume:</h3>
-                <img src="resume-qr-code.png" alt="Resume QR Code" />
-            </div>
-            <div class="qr-code">
-                <h3>Visit my GitHub:</h3>
-                <img src="github-qr-code.png" alt="GitHub QR Code" />
+            <div class="qr-codes">
+                <div class="qr-code">
+                    <img src="github-qr.png" alt="GitHub Profile QR Code" />
+                    <p>GitHub Profile</p>
+                </div>
+                <div class="qr-code">
+                    <img src="resume-qr.png" alt="Resume Download QR Code" />
+                    <p>Download Resume</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Kanav Sharma. All rights reserved.</p>
+        <p>© 2024 Kanav Sharma. All rights reserved.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
