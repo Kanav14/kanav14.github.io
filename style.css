@@ -2,88 +2,112 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
     color: #333;
 }
 
 .header {
+    background-color: #ffffff;
     text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .profile-img {
     width: 150px;
+    height: auto;
     border-radius: 50%;
 }
 
+h1 {
+    margin: 10px 0;
+}
+
+/* Updated Navbar Styles */
 .navbar {
     background-color: #333;
-    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .navbar ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .navbar li {
-    display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 .navbar a {
     color: white;
+    padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
 }
 
 main {
     padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left; /* Ensure text aligns properly */
 }
 
 h2 {
+    color: #333;
     text-align: center;
 }
 
-section {
-    margin: 20px 0;
+h3 {
+    color: #555;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-ul li {
-    padding: 5px 0;
-}
-
-.job {
-    margin: 20px 0;
-}
-
+/* Skill Table */
 .skills-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .skills-table th, .skills-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+.qr-codes {
+    display: flex;
+    justify-content: space-between;
 }
 
 .qr-code {
     text-align: center;
-    margin: 20px 0;
+    margin: 10px;
+}
+
+.qr-code img {
+    width: 150px;
+    height: auto;
 }
 
 footer {
     text-align: center;
-    background-color: #f4f4f4;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+.testimonial {
+    background-color: #e2e2e2;
     padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
 }
