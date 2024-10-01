@@ -22,57 +22,65 @@ h1 {
     margin: 10px 0;
 }
 
+/* Updated Navbar Styles */
 .navbar {
     background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 .navbar li {
-    display: inline;
+    margin: 0 15px;
 }
 
 .navbar a {
     color: white;
-    padding: 14px 20px;
+    padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .navbar a:hover {
     background-color: #575757;
+    border-radius: 5px;
 }
 
 main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
+    text-align: left; /* Ensure text aligns properly */
 }
 
 h2 {
     color: #333;
+    text-align: center;
 }
 
 h3 {
     color: #555;
 }
 
-.job, .projects-container, .qr-codes {
-    margin-bottom: 20px;
-}
-
+/* Skill Table */
 .skills-table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 .skills-table th, .skills-table td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
+    background-color: #f9f9f9;
 }
 
 .qr-codes {
