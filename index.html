@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanav's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
     <header class="header">
@@ -30,7 +31,6 @@
     </nav>
 
     <main>
-        <!-- About Me Section -->
         <section id="about" data-aos="fade-up">
             <h2>About Me</h2>
             <p><strong>DevOps Engineer with 5 years of industry experience</strong></p>
@@ -48,7 +48,6 @@
             </p>
         </section>
 
-        <!-- Experience Section -->
         <section id="experience" data-aos="fade-up">
             <h2>Work Experience</h2>
             <div class="job">
@@ -69,42 +68,36 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" data-aos="fade-up">
             <h2>Skills</h2>
             <table class="skills-table">
-                <tr>
-                    <th>Technical Skills</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td>Languages</td>
-                    <td>Shell, Python, Groovy</td>
-                </tr>
-                <tr>
-                    <td>DevOps Tools</td>
-                    <td>Ansible, Docker, Kubernetes, Jenkins, OpenShift</td>
-                </tr>
-                <tr>
-                    <td>Cloud Services</td>
-                    <td>AWS (EC2, OpenSearch, Load Balancer, IAM), Azure DevOps</td>
-                </tr>
-                <tr>
-                    <td>Backing Services</td>
-                    <td>Elasticsearch, Kafka, Cloudera, Postgres</td>
-                </tr>
-                <tr>
-                    <td>Misc</td>
-                    <td>GitHub, Artifactory, Jira, Blackduck, Selenium, Bitbucket, Vault, OpenTelemetry, Nexus, Helm, ArgoCD, Grafana</td>
-                </tr>
-                <tr>
-                    <td>Certifications</td>
-                    <td>Azure DevOps Engineer Expert, AWS DevOps Engineer Professional</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Languages</td>
+                        <td>Shell, Python, Groovy</td>
+                    </tr>
+                    <tr>
+                        <td>DevOps Tools</td>
+                        <td>Ansible, Docker, Kubernetes, Jenkins, OpenShift</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Services</td>
+                        <td>AWS (EC2, OpenSearch, Load Balancer, IAM), Azure DevOps, Elasticsearch, Kafka, Cloudera, Postgres</td>
+                    </tr>
+                    <tr>
+                        <td>Miscellaneous</td>
+                        <td>GitHub, Artifactory, Jira, Blackduck, Selenium, Bitbucket, Vault, OpenTelemetry, Nexus, Helm, ArgoCD, Grafana</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
-        <!-- Certifications Section -->
         <section id="certifications" data-aos="fade-up">
             <h2>Certifications</h2>
             <ul>
@@ -115,16 +108,14 @@
             </ul>
         </section>
 
-        <!-- Patents Section -->
         <section id="patents" data-aos="fade-up">
             <h2>Patents</h2>
             <ul>
-                <li><strong>Automated Cricket Monitoring System</strong> (201911004796) - System uses microwaves to detect run-outs and no-balls in cricket without 3rd Umpire’s need.</li>
-                <li><strong>Method For Analyzing Consumer Behavior</strong> (201911031034) - AI-based system for banks to understand consumer repayment ability.</li>
+                <li>Automated Cricket Monitoring System (201911004796) - System uses microwaves to detect run-outs and no-balls in cricket without 3rd Umpire’s need</li>
+                <li>Method For Analyzing Consumer Behavior (201911031034) - AI-based system for banks to understand if a consumer can repay the loan or not</li>
             </ul>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" data-aos="fade-up">
             <h2>Projects</h2>
             <div class="projects-container">
@@ -132,30 +123,29 @@
                     <h3>Digital Experience R&D Team - Amdocs (Jan 2023 - Aug 2024)</h3>
                     <ul>
                         <li>Developed solutions to fast-track application releases by writing automations in Shell, Groovy, and Python.</li>
-                        <li>Developed and implemented a solution to perform drill activity in case of disaster with 95% success in one go.</li>
-                        <li>Deployed end-to-end application on AWS EKS cluster with containerized backing services like Kafka, Elasticsearch, and Couchbase.</li>
+                        <li>Implemented a disaster recovery solution with 95% success.</li>
+                        <li>Deployed applications on AWS EKS with containerized backing services like Kafka, Elasticsearch, Couchbase.</li>
                     </ul>
                 </div>
                 <div class="project-card">
-                    <h3>CatalogeOne and DigitalOne Application - XLCOM (Aug 2021 - Dec 2022)</h3>
+                    <h3>CatalogeOne and DeigitalOne Application - XLCOM (Aug 2021 - Dec 2022)</h3>
                     <ul>
-                        <li>Installed OpenShift cluster on VMware with backing services like Couchbase, Cloudera, Elasticsearch, and Postgres fully automated by Groovy.</li>
-                        <li>Deployed an environment using Helm charts to deploy application on OpenShift.</li>
-                        <li>Managed pods' aliveness, troubleshooting, and fixing any pod down issues.</li>
+                        <li>Installed OpenShift cluster on VMware with services like Couchbase, Cloudera, Elasticsearch, and Postgres fully automated by Groovy.</li>
+                        <li>Deployed an environment using helm charts on OpenShift.</li>
+                        <li>Managed pods' aliveness and troubleshooting.</li>
                     </ul>
                 </div>
                 <div class="project-card">
                     <h3>Genesys - HSBC (Aug 2019 - Jul 2021)</h3>
                     <ul>
-                        <li>Wrote automation scripts in Ansible to deploy dependencies such as SQL, Java, etc. as prerequisites to client application.</li>
-                        <li>Integrated Selenium with Ansible Tower for automation deployment of test cases on client VMs.</li>
-                        <li>Configured Ansible Vault for safe storage of secrets at client on-prem VMs.</li>
+                        <li>Wrote automation scripts in Ansible for deploying dependencies such as SQL and Java.</li>
+                        <li>Integrated Selenium with Ansible Tower for test automation on client VMs.</li>
+                        <li>Configured Ansible Vault for safe storage of secrets.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
         <section id="testimonials" data-aos="fade-up">
             <h2>Testimonials</h2>
             <div class="testimonial">
@@ -163,30 +153,23 @@
                 <cite>- John Doe, Senior Manager at XYZ Corp</cite>
             </div>
             <div class="testimonial">
-                <p>"A dedicated professional with exceptional technical skills and a strong work ethic."</p>
-                <cite>- Jane Smith, Team Lead at ABC Ltd</cite>
+                <p>"Kanav's ability to automate processes significantly improved our team's productivity."</p>
+                <cite>- Jane Smith, Project Lead at ABC Inc.</cite>
             </div>
-            <p>For more recommendations, visit my <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>.</p>
         </section>
 
-        <!-- QR Codes Section -->
         <section id="qr-codes" data-aos="fade-up">
-            <h2>Connect with Me</h2>
-            <div class="qr-codes">
-                <div class="qr-code">
-                    <img src="github-qr.png" alt="GitHub Profile QR Code" />
-                    <p>GitHub Profile</p>
-                </div>
-                <div class="qr-code">
-                    <img src="resume-qr.png" alt="Resume Download QR Code" />
-                    <p>Download Resume</p>
-                </div>
+            <h2>Connect</h2>
+            <p>Scan the QR codes to connect with me on GitHub and download my resume:</p>
+            <div class="qr-container">
+                <img src="qr-github.png" alt="GitHub QR Code" class="qr-code">
+                <img src="qr-resume.png" alt="Resume QR Code" class="qr-code">
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2024 Kanav Sharma. All rights reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2024 Kanav Sharma. All Rights Reserved.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
