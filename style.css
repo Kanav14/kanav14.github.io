@@ -1,25 +1,18 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
     color: #333;
 }
 
 .header {
     text-align: center;
+    background-color: #f4f4f4;
     padding: 20px;
-    background-color: #444;
-    color: white;
 }
 
 .profile-img {
     width: 150px;
-    height: 150px;
     border-radius: 50%;
 }
 
@@ -29,14 +22,13 @@ body {
 }
 
 .navbar ul {
-    display: flex;
-    justify-content: center;
     list-style-type: none;
-    padding: 10px 0;
+    padding: 0;
 }
 
 .navbar li {
-    margin: 0 15px;
+    display: inline;
+    margin-right: 15px;
 }
 
 .navbar a {
@@ -44,58 +36,54 @@ body {
     text-decoration: none;
 }
 
-.navbar a:hover {
-    text-decoration: underline;
-}
-
 main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 40px;
-}
-
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+}
+
+section {
+    margin: 20px 0;
 }
 
 ul {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
-    list-style-position: inside;
+}
+
+ul li {
+    padding: 5px 0;
 }
 
 .job {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
-.project-card {
-    background-color: #fff;
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.skills-table th, .skills-table td {
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 15px;
-}
-
-.projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.testimonial {
+    padding: 8px;
     text-align: center;
-    margin: 10px 0;
 }
 
 .qr-code {
     text-align: center;
+    margin: 20px 0;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #444;
-    color: white;
+    background-color: #f4f4f4;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
