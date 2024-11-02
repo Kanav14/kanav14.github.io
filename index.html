@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div id="header">
-    <img src="path_to_your_photo.jpg" alt="Your Name" id="profile-photo">
+    <img src="kanav.jpeg" alt="Your Name" id="profile-photo">
     <h1>Your Name</h1>
     <p id="location">Your Location</p>
     <p id="roles">Roles I'm Looking For: DevOps Engineer, Cloud Engineer, SRE</p>
@@ -17,17 +18,13 @@
 </div>
 
 <div id="container">
-    <!-- Navigation -->
     <div id="nav">
         <button onclick="showSection('about')">About Me</button>
         <button onclick="showSection('resume')">Resume</button>
         <button onclick="showSection('portfolio')">Portfolio</button>
-        <button onclick="showSection('contact')">Contact</button>
     </div>
 
-    <!-- Content Section -->
     <div id="content">
-        <!-- About Me Section -->
         <div id="about" class="section">
             <h2>About Me</h2>
             <p>
@@ -39,7 +36,6 @@
                 and maintaining high availability in Kubernetes-based container clusters. Implemented monitoring and logging tools such as ELK, Grafana, and Datadog for system performance visibility,
                 and applied GitOps for infrastructure as code management.
             </p>
-
             <div class="sub-section">
                 <h3>What I'm Doing</h3>
                 <p><strong>DevOps:</strong> Improving delivery speed and quality, automation, and achieving CI/CD.</p>
@@ -49,7 +45,6 @@
             </div>
         </div>
 
-        <!-- Resume Section -->
         <div id="resume" class="section" style="display: none;">
             <h2>Resume</h2>
             <p><strong>Experience:</strong></p>
@@ -64,43 +59,22 @@
             </ul>
         </div>
 
-        <!-- Portfolio Section -->
         <div id="portfolio" class="section" style="display: none;">
             <h2>Portfolio</h2>
-            <div class="portfolio-controls">
-                <button onclick="filterPortfolio('all')">All</button>
-                <button onclick="filterPortfolio('patent')">Patents</button>
-                <button onclick="filterPortfolio('certification')">Certifications</button>
-                <button onclick="filterPortfolio('badge')">Badges</button>
-            </div>
-            <div class="portfolio-grid" id="portfolio-grid">
-                <!-- Portfolio items -->
-                <div class="portfolio-item patent">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
                     <img src="path_to_patent_image1.jpg" alt="Patent 1">
                     <a href="link_to_patent1" target="_blank">Patent 1</a>
                 </div>
-                <div class="portfolio-item certification">
+                <div class="portfolio-item">
                     <img src="path_to_certification_image1.jpg" alt="Certification 1">
                     <a href="link_to_certification1" target="_blank">Certification 1</a>
                 </div>
-                <div class="portfolio-item badge">
+                <div class="portfolio-item">
                     <img src="path_to_badge_image1.jpg" alt="Badge 1">
                     <a href="link_to_badge1" target="_blank">Badge 1</a>
                 </div>
-                <!-- Add more items as needed -->
             </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div id="contact" class="section" style="display: none;">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
         </div>
     </div>
 </div>
