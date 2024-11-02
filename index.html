@@ -3,190 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanav's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <img src="Kanav.jpeg" alt="Your Name" class="profile-img">
-        <h1>Kanav Sharma</h1>
-        <p>DevOps Engineer | Master's in Information Systems</p>
-        <p>Location: Chicago, IL | Email: kanavsharma30@gmail.com | Phone: +1(773)715-7384</p>
-    </header>
-    
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#patents">Patents</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#qr-codes">Connect</a></li>
-        </ul>
-    </nav>
 
-    <main>
+<div id="header">
+    <img src="path_to_your_photo.jpg" alt="Your Name" id="profile-photo">
+    <h1>Your Name</h1>
+    <p id="location">Your Location</p>
+    <p id="roles">Roles I'm Looking For: DevOps Engineer, Cloud Engineer, SRE</p>
+    <a href="path_to_your_cv.pdf" id="download-cv" target="_blank">Download CV</a>
+</div>
+
+<div id="container">
+    <!-- Navigation -->
+    <div id="nav">
+        <button onclick="showSection('about')">About Me</button>
+        <button onclick="showSection('resume')">Resume</button>
+        <button onclick="showSection('portfolio')">Portfolio</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
+
+    <!-- Content Section -->
+    <div id="content">
         <!-- About Me Section -->
-        <section id="about" data-aos="fade-up">
+        <div id="about" class="section">
             <h2>About Me</h2>
-            <p><strong>DevOps Engineer with 5 years of industry experience</strong></p>
-            <ul>
-                <li>Extensive experience with automating and optimizing deployments on AWS.</li>
-                <li>Skilled in Terraform, CI/CD pipelines, and cloud infrastructure management.</li>
-                <li>Strong understanding of programming languages like Python, Java, JavaScript.</li>
-                <li>Worked on databases like PostgreSQL, MySQL, and MongoDB.</li>
-                <li>Proficient in cloud services, Docker, Kubernetes, Jenkins, and GitHub Actions.</li>
-                <li>Knowledge of Agile and Software Development Life Cycle (SDLC) methodologies.</li>
-                <li>Experience with configuration management tools like Ansible and Chef.</li>
-            </ul>
             <p>
-                I'm a results-driven DevOps Engineer, passionate about automating processes and optimizing cloud infrastructure for seamless performance. With over five years of experience, I've worked on diverse projects, leveraging tools like AWS, Docker, and Terraform to streamline operations and build resilient systems. Currently pursuing a Master’s in Information Systems, I strive to push the boundaries of technology, continuously learning and applying innovative solutions to deliver exceptional outcomes.
+                A passionate and skilled DevOps, SRE, and Cloud Engineer with a strong background in infrastructure provisioning, automation, and monitoring.
+                Certified as a Google Cloud Associate Cloud Engineer and AWS Certified Cloud Practitioner.
             </p>
-        </section>
+            <p>
+                Experienced with Jenkins, Terraform, and Ansible for streamlining development processes and efficient code deployment. Proficient in managing and monitoring cloud services on AWS and GCP,
+                and maintaining high availability in Kubernetes-based container clusters. Implemented monitoring and logging tools such as ELK, Grafana, and Datadog for system performance visibility,
+                and applied GitOps for infrastructure as code management.
+            </p>
 
-        <!-- Experience Section -->
-        <section id="experience" data-aos="fade-up">
-            <h2>Work Experience</h2>
-            <div class="job">
-                <h3>DevOps Engineer Advance</h3>
-                <p>Amdocs, Pune, India (Aug 2021 – Aug 2024)</p>
-                <ul>
-                    <li>Managed deployments in OpenShift, achieving 99% success in disaster recovery drills.</li>
-                    <li>Automated tasks using shell, Python, and Groovy, reducing man hours by 40%.</li>
-                </ul>
+            <div class="sub-section">
+                <h3>What I'm Doing</h3>
+                <p><strong>DevOps:</strong> Improving delivery speed and quality, automation, and achieving CI/CD.</p>
+                <p><strong>Cloud Engineer:</strong> Designing, securing, and maintaining cloud infrastructure and applications.</p>
+                <p><strong>SRE:</strong> Ensuring scalability, reliability, and availability of software systems.</p>
+                <p><strong>Software Development:</strong> Learning and developing software for personal and professional use.</p>
             </div>
-            <div class="job">
-                <h3>Software Engineer</h3>
-                <p>Nihilent Ltd, Pune, India (Aug 2019 – Jul 2021)</p>
-                <ul>
-                    <li>Implemented CI/CD activities using Ansible, AWX, and HaProxy.</li>
-                    <li>Collaborated with testing team to automate selenium testing using Ansible.</li>
-                </ul>
-            </div>
-        </section>
+        </div>
 
-        <!-- Skills Section -->
-        <section id="skills" data-aos="fade-up">
-            <h2>Skills</h2>
-            <table class="skills-table">
-                <tr>
-                    <th>Technical Skills</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td>Languages</td>
-                    <td>Shell, Python, Groovy</td>
-                </tr>
-                <tr>
-                    <td>DevOps Tools</td>
-                    <td>Ansible, Docker, Kubernetes, Jenkins, OpenShift</td>
-                </tr>
-                <tr>
-                    <td>Cloud Services</td>
-                    <td>AWS (EC2, OpenSearch, Load Balancer, IAM), Azure DevOps</td>
-                </tr>
-                <tr>
-                    <td>Backing Services</td>
-                    <td>Elasticsearch, Kafka, Cloudera, Postgres</td>
-                </tr>
-                <tr>
-                    <td>Misc</td>
-                    <td>GitHub, Artifactory, Jira, Blackduck, Selenium, Bitbucket, Vault, OpenTelemetry, Nexus, Helm, ArgoCD, Grafana</td>
-                </tr>
-                <tr>
-                    <td>Certifications</td>
-                    <td>Azure DevOps Engineer Expert, AWS DevOps Engineer Professional</td>
-                </tr>
-            </table>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" data-aos="fade-up">
-            <h2>Certifications</h2>
+        <!-- Resume Section -->
+        <div id="resume" class="section" style="display: none;">
+            <h2>Resume</h2>
+            <p><strong>Experience:</strong></p>
             <ul>
-                <li>AWS Certified: Solutions Architect – Associate</li>
-                <li>AWS Certified: DevOps Engineer - Professional</li>
-                <li>Microsoft Certified: Azure DevOps Engineer Expert</li>
-                <li>Groovy, Nexus, Helm, OpenTelemetry, ArgoCD</li>
+                <li>DevOps Engineer, Amdocs India (Aug 2021 - Aug 2024)</li>
+                <li>Software Engineer, Nihilent Ltd (Aug 2019 - Jul 2021)</li>
             </ul>
-        </section>
-
-        <!-- Patents Section -->
-        <section id="patents" data-aos="fade-up">
-            <h2>Patents</h2>
+            <p><strong>Education:</strong></p>
             <ul>
-                <li><strong>Automated Cricket Monitoring System</strong> (201911004796) - System uses microwaves to detect run-outs and no-balls in cricket without 3rd Umpire’s need.</li>
-                <li><strong>Method For Analyzing Consumer Behavior</strong> (201911031034) - AI-based system for banks to understand consumer repayment ability.</li>
+                <li>Master's in Information Science, DePaul University, GPA: 4.0</li>
+                <li>Bachelor of Technology in Computer Science, Chandigarh Group of Colleges, GPA: 7.56</li>
             </ul>
-        </section>
+        </div>
 
-        <!-- Projects Section -->
-        <section id="projects" data-aos="fade-up">
-            <h2>Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h3>Digital Experience R&D Team - Amdocs (Jan 2023 - Aug 2024)</h3>
-                    <ul>
-                        <li>Developed solutions to fast-track application releases by writing automations in Shell, Groovy, and Python.</li>
-                        <li>Developed and implemented a solution to perform drill activity in case of disaster with 95% success in one go.</li>
-                        <li>Deployed end-to-end application on AWS EKS cluster with containerized backing services like Kafka, Elasticsearch, and Couchbase.</li>
-                    </ul>
+        <!-- Portfolio Section -->
+        <div id="portfolio" class="section" style="display: none;">
+            <h2>Portfolio</h2>
+            <div class="portfolio-controls">
+                <button onclick="filterPortfolio('all')">All</button>
+                <button onclick="filterPortfolio('patent')">Patents</button>
+                <button onclick="filterPortfolio('certification')">Certifications</button>
+                <button onclick="filterPortfolio('badge')">Badges</button>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items -->
+                <div class="portfolio-item patent">
+                    <img src="path_to_patent_image1.jpg" alt="Patent 1">
+                    <a href="link_to_patent1" target="_blank">Patent 1</a>
                 </div>
-                <div class="project-card">
-                    <h3>CatalogeOne and DigitalOne Application - XLCOM (Aug 2021 - Dec 2022)</h3>
-                    <ul>
-                        <li>Installed OpenShift cluster on VMware with backing services like Couchbase, Cloudera, Elasticsearch, and Postgres fully automated by Groovy.</li>
-                        <li>Deployed an environment using Helm charts to deploy application on OpenShift.</li>
-                        <li>Managed pods' aliveness, troubleshooting, and fixing any pod down issues.</li>
-                    </ul>
+                <div class="portfolio-item certification">
+                    <img src="path_to_certification_image1.jpg" alt="Certification 1">
+                    <a href="link_to_certification1" target="_blank">Certification 1</a>
                 </div>
-                <div class="project-card">
-                    <h3>Genesys - HSBC (Aug 2019 - Jul 2021)</h3>
-                    <ul>
-                        <li>Wrote automation scripts in Ansible to deploy dependencies such as SQL, Java, etc. as prerequisites to client application.</li>
-                        <li>Integrated Selenium with Ansible Tower for automation deployment of test cases on client VMs.</li>
-                        <li>Configured Ansible Vault for safe storage of secrets at client on-prem VMs.</li>
-                    </ul>
+                <div class="portfolio-item badge">
+                    <img src="path_to_badge_image1.jpg" alt="Badge 1">
+                    <a href="link_to_badge1" target="_blank">Badge 1</a>
                 </div>
+                <!-- Add more items as needed -->
             </div>
-        </section>
+        </div>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" data-aos="fade-up">
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <p>"An innovative thinker who consistently brings fresh ideas to the table."</p>
-                <cite>- John Doe, Senior Manager at XYZ Corp</cite>
-            </div>
-            <div class="testimonial">
-                <p>"A dedicated professional with exceptional technical skills and a strong work ethic."</p>
-                <cite>- Jane Smith, Team Lead at ABC Ltd</cite>
-            </div>
-            <p>For more recommendations, visit my <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>.</p>
-        </section>
+        <!-- Contact Section -->
+        <div id="contact" class="section" style="display: none;">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
 
-        <!-- QR Codes Section -->
-        <section id="qr-codes" data-aos="fade-up">
-            <h2>Connect with Me</h2>
-            <p>Scan the QR codes to visit my GitHub profile and download my resume:</p>
-            <div class="qr-container">
-                <img src="github-qr.png" alt="GitHub Profile QR Code">
-                <img src="resume-qr.png" alt="Download Resume QR Code">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Kanav Sharma. All rights reserved.</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
