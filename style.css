@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: #f4f4f9;
+    color: #333;
 }
 
 /* Header Styles */
@@ -16,23 +17,26 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: #333;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
     color: #fff;
     padding: 20px;
     text-align: center;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 #profile-photo {
-    width: 100px;
+    width: 120px;
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 3px solid white;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 #location, #roles {
@@ -43,47 +47,54 @@ h1 {
 #download-cv {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 15px;
-    background: #666;
-    color: #fff;
+    padding: 10px 20px;
+    background: #fff;
+    color: #4a90e2;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    border: 2px solid #4a90e2;
+    transition: all 0.3s ease;
 }
 
 #download-cv:hover {
-    background: #444;
+    background: #4a90e2;
+    color: #fff;
 }
 
 /* Main Container */
 #container {
     margin-top: 150px; /* Space for fixed header */
-    width: 80%;
-    max-width: 900px;
+    width: 90%;
+    max-width: 1000px;
     margin: 150px auto 0 auto;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 /* Navigation */
 #nav {
     display: flex;
-    background: #333;
+    justify-content: space-around;
+    background: #4a90e2;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 #nav button {
     flex: 1;
     padding: 15px;
     border: none;
-    background: #333;
+    background: #4a90e2;
     color: #fff;
     cursor: pointer;
     transition: background 0.3s;
+    font-weight: bold;
 }
 
 #nav button:hover {
-    background: #555;
+    background: #357ab8;
 }
 
 /* Content Section */
@@ -93,8 +104,10 @@ h1 {
 
 h2 {
     margin-bottom: 10px;
-    font-size: 24px;
-    color: #333;
+    font-size: 28px;
+    color: #4a90e2;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
 }
 
 p {
@@ -105,9 +118,9 @@ p {
 
 /* Sub-sections in About */
 .sub-section h3 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 8px;
-    color: #444;
+    color: #4a90e2;
 }
 
 .sub-section p {
@@ -116,86 +129,54 @@ p {
 }
 
 /* Portfolio Section */
-#portfolio {
-    display: none;
-}
-
-.portfolio-controls {
-    margin-bottom: 15px;
-}
-
-.portfolio-controls button {
-    padding: 10px 15px;
-    margin-right: 5px;
-    border: none;
-    background: #666;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.portfolio-controls button:hover {
-    background: #444;
-}
-
 .portfolio-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 
 .portfolio-item {
     width: calc(33.333% - 10px);
-    background: #eee;
-    border-radius: 5px;
+    background: #f4f4f4;
+    border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    position: relative;
 }
 
 .portfolio-item img {
     width: 100%;
-    height: auto;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05);
+    border-bottom: 2px solid #4a90e2;
 }
 
 .portfolio-item a {
     display: block;
-    text-align: center;
     padding: 10px;
-    color: #333;
+    background: #4a90e2;
+    color: white;
     text-decoration: none;
+    transition: background 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-/* Contact Section */
-#contact {
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item a:hover {
+    background: #357ab8;
+}
+
+/* Section Visibility */
+.section {
     display: none;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contact-form button:hover {
-    background: #555;
+.section.active {
+    display: block;
 }
